@@ -4,34 +4,34 @@ A basic application to get things up and running.
 
 The aim is to accomplish the following topics:
 
-| TOPIC        | SUBTOPIC                   | STATUS |
-| ------------ |:---------------------------|:------:|
-| *Template*   | Rendering static contents  | To do  |
-|              | Rendering dynamic contents | To do  |
-|              | Update dynamic templates   | To do  |
-| *Session*    | Opening                    | To do  |
-|              | Reading                    | To do  |
-|              | Closing / Cleaning         | To do  |
-| *Database*   | Open connection            | To do  |
-|              | CRUD                       | To do  |
-|              | Transaction                | To do  |
-|              | Close connection           | To do  |
-| *HTTP*       | GET                        | ~~Done~~   |
-|              | POST                       | To do  |
-| *Auth*       | Login                      | To do  |
-|              | Logout                     | To do  |
-|              | Clean previous data        | To do  |
-| *Routes*     | Basic                      | To do  |
-| *Acl*        | Rules by user profile      | To do  |
-|              | Permissions                | To do  |
-| *Validation* | Data types                 | To do  |
-|              | Form validation            | To do  |
-| *Filtering*  | Data types                 | To do  |
-|              | Form filtering             | To do  |
-| *Messages*   | Form messages              | To do  |
-|              | Application/User messages  | To do  |
-| *Logs*       | Log into files             | To do  |
-|              | Log into database          | To do  |
+| TOPIC          | SUBTOPIC                   | STATUS |
+|----------------|:---------------------------|:------:|
+| **Template**   | Rendering static contents  | To do  |
+|                | Rendering dynamic contents | To do  |
+|                | Update dynamic templates   | To do  |
+| **Session**    | Opening                    | To do  |
+|                | Reading                    | To do  |
+|                | Closing / Cleaning         | To do  |
+| **Database**   | Open connection            | To do  |
+|                | CRUD                       | To do  |
+|                | Transaction                | To do  |
+|                | Close connection           | To do  |
+| **HTTP**       | GET                        | ~~Done~~   |
+|                | POST                       | To do  |
+| **Auth**       | Login                      | To do  |
+|                | Logout                     | To do  |
+|                | Clean previous data        | To do  |
+| **Routes**     | Basic                      | To do  |
+| **Acl**        | Rules by user profile      | To do  |
+|                | Permissions                | To do  |
+| **Validation** | Data types                 | To do  |
+|                | Form validation            | To do  |
+| **Filtering**  | Data types                 | To do  |
+|                | Form filtering             | To do  |
+| **Messages**   | Form messages              | To do  |
+|                | Application/User messages  | To do  |
+| **Logs**       | Log into files             | To do  |
+|                | Log into database          | To do  |
 
 ### Installing
 1. `git clone` this repository, then use `composer install` to get all Silex dependencies.
