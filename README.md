@@ -36,7 +36,7 @@ The aim is to accomplish the following topics:
 ### Installing
 1. `git clone` this repository, then use `composer install` to get all Silex dependencies.
 
-2. Add the following vhost to your Apache `vhosts.conf` file (make sure you've enabled mod_rewrite):
+2. Add the following vhost to your Apache `httpd-vhosts.conf` file (make sure you've enabled mod_rewrite):
 
 ```
 <VirtualHost *>
