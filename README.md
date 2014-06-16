@@ -16,7 +16,7 @@ The aim is to accomplish the following topics:
 |              | CRUD                       | To do  |
 |              | Transaction                | To do  |
 |              | Close connection           | To do  |
-| *HTTP*       | GET                        | Done   |
+| *HTTP*       | GET                        | ~~Done~~   |
 |              | POST                       | To do  |
 | *Auth*       | Login                      | To do  |
 |              | Logout                     | To do  |
@@ -34,10 +34,21 @@ The aim is to accomplish the following topics:
 |              | Log into database          | To do  |
 
 ### Installing
-git clone this repository, then use `composer install` to get all Silex dependencies.
+1. `git clone` this repository, then use `composer install` to get all Silex dependencies.
+
+2. Add the following vhost to your Apache `vhosts.conf` file (make sure you've enabled mod_rewrite):
+
+```
+<VirtualHost *>
+    DocumentRoot "path\to\silex-application\web"
+    ServerName silex-application.dev
+    <Directory "path\to\silex-application\web">
+        AllowOverride All
+    </Directory>
+</VirtualHost>
+```
 
 I suggest you to create the same folder structure, as follows:
-
 
 ```
 \path\to\silex-application
