@@ -7,17 +7,12 @@ The aim is to accomplish the following topics:
 | TOPIC      | SUBTOPIC                   | STATUS |
 | ---------- |:--------------------------:| ------:|
 | *Template* | Rendering static contents  | To do  |
-|            |:--------------------------:| ------:|
 |            | Rendering dynamic contents | To do  |
-|            |:--------------------------:| ------:|
 |            | Update dynamic templates   | To do  |
 | ---------- |:--------------------------:| ------:|
 | *Session*  | Opening                    | To do  |
-|            |:--------------------------:| ------:|
 |            | Reading                    | To do  |
-|            |:--------------------------:| ------:|
 |            | Closing / Cleaning         | To do  |
-| ---------- |:--------------------------:| ------:|
 | *Database* |  
 
 ### Installing
