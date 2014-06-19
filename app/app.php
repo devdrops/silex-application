@@ -10,4 +10,8 @@ $app->get('/', function(){
     return new Response('Welcome to my new Silex App!');
 });
 
+$app->error(function(\Exception $exc, $code){
+    return new Response('Oops! Something went terribly wrong...: ' . $exc->getMessage());
+});
+
 return $app;
