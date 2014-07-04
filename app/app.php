@@ -27,4 +27,7 @@ $app->error(function(\Exception $exc, $code){
     return new Response($message . ': ' . $exc->getMessage());
 });
 
+/* Debug mode */
+$app['debug'] = true;
+
 return $app;
