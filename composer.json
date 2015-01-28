@@ -2,6 +2,6 @@
     "name": "devdrops/silex-application",
     "description": "Description of project silex_application.",
     "require": {
-        "silex/silex": "v1.2.0"
+        "silex/silex": "v1.2.3"
     }
 }
