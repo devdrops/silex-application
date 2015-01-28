@@ -1,3 +1,0 @@
-<?php
-
-// Provide fetures here!
