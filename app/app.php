@@ -1,33 +1,43 @@
 <?php
 
-require_once __DIR__ . '/bootstrap.php';
+/**
+ * Application's settings.
+ */
 
+use Silex\Provider\DoctrineServiceProvider;
+use Silex\Provider\SessionServiceProvider;
+use Silex\Provider\TwigServiceProvider;
 use Symfony\Component\HttpFoundation\Response;
 
-$app = new Silex\Application();
 
-/*
- * Home action.
- */
-$app->get('/', function(){
-    return new Response('Welcome to my new Silex App!');
-});
+$app->register(new SessionServiceProvider());
 
-/*
- * Error handler
- */
-$app->error(function(\Exception $exc, $code){
-    switch ($code){
+$app->register(new DoctrineServiceProvider());
+
+$app->register(
+    new TwigServiceProvider(),
+    [
+        'twig.options' => [
+            'cache' => isset($app['twig.options.cache']) ? $app['twig.options.cache'] : false,
+            'strict_variables' => true,
+        ]
+    ]
+);
+
+$app->error(function (\Exception $e, $code) use ($app) {
+    if ($app['debug']) {
+        return;
+    }
+
+    switch ($code) {
         case 404:
-            $message = 'Oops! Something went terribly wrong...';
+            $message = 'The requested page could not be found.';
             break;
         default:
-            $message = 'Oops! Something went wrong, but no worries :)';
+            $message = 'We are sorry, but something went terribly wrong.';
     }
-    return new Response($message . ': ' . $exc->getMessage());
-});
 
-/* Debug mode */
-$app['debug'] = true;
+    return new Response($message, $code);
+});
 
 return $app;

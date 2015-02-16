@@ -1,3 +1,7 @@
 /nbproject
 
-/vendor
+composer.lock
+
+vendor/
+app/cache/
+app/config/prod.php

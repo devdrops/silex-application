@@ -1,13 +1,11 @@
 <?php
 
-/* @var $app \Silex\Application */
-$app = require_once __DIR__ . '/../app/app.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
-use Symfony\Component\HttpFoundation\Response;
+$app = new Silex\Application();
 
-// Basic routing test.
-$app->get('/shout/{name}', function($name){
-    return new Response('HEY ' . strtoupper($name));
-});
+require __DIR__.'/../app/config/prod.php';
+require __DIR__.'/../app/app.php';
+require __DIR__.'/../app/routes.php';
 
 $app->run();
