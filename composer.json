@@ -1,7 +1,26 @@
 {
     "name": "devdrops/silex-application",
-    "description": "Description of project silex_application.",
+    "description": "A skeleton for Silex applications.",
+    "authors": [
+        {
+            "name": "Davi Marcondes Moreira",
+            "email": "davi.marcondes.moreira@gmail.com"
+        }
+    ],
     "require": {
-        "silex/silex": "v1.2.3"
+        "silex/silex": "@stable",
+        "twig/twig": "@stable",
+        "doctrine/dbal": "@stable"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "@stable"
+    },
+    "autoload": {
+        "psr-0": {
+            "SilexSkel": "src/"
+        },
+        "psr-4": {
+            "SilexSkel\\": "src/"
+        }
     }
 }
