@@ -1,6 +1,7 @@
 {
     "name": "devdrops/silex-application",
     "description": "A skeleton for Silex applications.",
+    "license": "MIT",
     "authors": [
         {
             "name": "Davi Marcondes Moreira",
